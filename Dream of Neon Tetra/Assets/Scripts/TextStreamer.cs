@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.IO;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace NovelGame
 {
@@ -11,10 +12,17 @@ namespace NovelGame
         [Header("読み込むテキストファイル")]
         [SerializeField] private TextAsset _textFile;
 
+        [Header("文字を表示する速さ")]
+        [SerializeField] private float _textSpeed = 0.05f;
+
         private TextMeshProUGUI _uiText;
         private List<string> _sentences = new List<string>();
         private int _currentLineIndex = 0;
         private int _linesInCurrentPage = 0;
+
+        private bool _isTyping = false;
+        private string _baseText = "";      // すでに表示が完了している文字
+        private string _fullVisibleText = ""; // 現在のページの完成形
 
         void Awake()
         {
@@ -36,7 +44,17 @@ namespace NovelGame
         {
             if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return))
             {
-                DisplayNextStep();
+                if (_isTyping)
+                {
+                    StopAllCoroutines();
+                    _uiText.text = _fullVisibleText;
+                    _baseText = _fullVisibleText; // スキップ時もベーステキストを更新
+                    _isTyping = false;
+                }
+                else
+                {
+                    DisplayNextStep();
+                }
             }
         }
 
@@ -44,9 +62,12 @@ namespace NovelGame
         {
             if (_currentLineIndex >= _sentences.Count) return;
 
+            // 2行表示済みならクリア
             if (_linesInCurrentPage >= 2)
             {
                 _uiText.text = "";
+                _baseText = "";
+                _fullVisibleText = "";
                 _linesInCurrentPage = 0;
             }
 
@@ -59,20 +80,40 @@ namespace NovelGame
                 return;
             }
 
-            // --- ここを修正 ---
+            // タイピングすべき新しい文字列を特定する
+            string newTextSegment = "";
             if (_linesInCurrentPage == 0)
             {
-                _uiText.text = targetLine;
+                newTextSegment = targetLine;
+                _fullVisibleText = targetLine;
             }
             else
             {
-                // \n を2つ繋げることで、1行分の空行（スペース）を作ります
-                _uiText.text += "\n\n" + targetLine;
+                newTextSegment = "\n\n" + targetLine;
+                _fullVisibleText = _baseText + newTextSegment;
             }
-            // ------------------
+
+            // 新しい部分だけをタイピングするコルーチンを開始
+            StartCoroutine(TypeNewSegment(newTextSegment));
 
             _linesInCurrentPage++;
             _currentLineIndex++;
+        }
+
+        IEnumerator TypeNewSegment(string segment)
+        {
+            _isTyping = true;
+
+            // 現在表示されているテキストをベースに、1文字ずつ追加
+            foreach (char c in segment)
+            {
+                _uiText.text += c;
+                yield return new WaitForSeconds(_textSpeed);
+            }
+
+            // 表示が終わった状態を保存
+            _baseText = _uiText.text;
+            _isTyping = false;
         }
     }
 }
