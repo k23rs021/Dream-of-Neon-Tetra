@@ -20,6 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/girl.unity
     guid: 5f7aec08382ff2d4da5ec18c29e3747c
+  - enabled: 1
+    path: Assets/Scenes/Livingroom.unity
+    guid: 49e93e7d0c6cf2944a140f7f1a82bebc
+  - enabled: 1
+    path: Assets/Scenes/Livingroom search.unity
+    guid: a7925df8d0799fa4abbe7e9e2d8c9d1b
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: fef100f0bde464740bfcedd64d33e8b3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

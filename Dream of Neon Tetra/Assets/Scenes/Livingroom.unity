@@ -682,9 +682,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773a5a6065a92a54eb95fb06512b4e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _background1: {fileID: -6727810180798395129, guid: eaf1a9f2643ed3b4283d9feb5374a302, type: 3}
+  _background1: {fileID: 1613461948694667830, guid: 331f5d15b184a26448ba087b37c22d50, type: 3}
   _backgroundObject: {fileID: 26816748}
-  _imagePrefab: {fileID: 8315922133806756338, guid: 262fe939965751e499a26f72713f455a, type: 3}
+  _imagePrefab: {fileID: 4116081292322071142, guid: c2796523d7c85ce4281d384c999fedcf, type: 3}
 --- !u!4 &797537521
 Transform:
   m_ObjectHideFlags: 0
@@ -735,7 +735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 251, y: 25}
+  m_AnchoredPosition: {x: -245, y: 29}
   m_SizeDelta: {x: -1077.95, y: -427.27}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1005792542
@@ -895,10 +895,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38be5b68ed4cec3449037a85c5f8e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textFile: {fileID: 4900000, guid: d9b29abacc8e35540a6b766377a72e73, type: 3}
-  _nextSceneName: Livingroom
+  _textFile: {fileID: 4900000, guid: 9d22051ca6cea3340b0fb85c506f5bf6, type: 3}
+  _nextSceneName: Livingroom search
   _fadeImage: {fileID: 1010631018}
-  _fadeDuration: 2
+  _fadeDuration: 0
 --- !u!1 &2074117890
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,4 @@
+﻿&img background1 backgroundObject
+&img eventCG1 eventObject
+ここはリビングルーム
+私はお夕食の用意をしてくるから見て回ってね。
