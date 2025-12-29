@@ -489,8 +489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 980, y: 200}
+  m_AnchoredPosition: {x: 0.0000019073, y: 0}
+  m_SizeDelta: {x: 448.5, y: 271.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625692367
 MonoBehaviour:
@@ -521,8 +521,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -531,7 +531,7 @@ MonoBehaviour:
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
+  m_spriteAsset: {fileID: 11400000, guid: 4204ea4198a83124fad51ca24422a726, type: 2}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
   m_TextStyleHashCode: -1183493901
@@ -605,6 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainTextObject: {fileID: 625692367}
+  _textSpeed: 0.05
 --- !u!1 &792603781
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,8 +735,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -480}
+  m_AnchoredPosition: {x: -302.82996, y: 30.899994}
+  m_SizeDelta: {x: -920.86, y: -368.75}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1005792542
 MonoBehaviour:
@@ -750,7 +751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -819,7 +820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38be5b68ed4cec3449037a85c5f8e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textFile: {fileID: 4900000, guid: 5aaae0cf7b2e6c24ca8ef51a187079b5, type: 3}
+  _textFile: {fileID: 4900000, guid: 0524602d3d3c50547984eac0b4ea4557, type: 3}
+  _nextSceneName: girl
 --- !u!1 &2074117890
 GameObject:
   m_ObjectHideFlags: 0

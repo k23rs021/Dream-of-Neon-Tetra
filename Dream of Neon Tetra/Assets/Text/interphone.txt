@@ -1,6 +1,6 @@
-&img background1 backgroundObject
+﻿&img background1 backgroundObject
 ""
 ピンポーン...ピンポーン...
 いない...？
 はーい、今あけまーす
-あらあなた魚くんね。
+あらあなた<sprite name="maincast">くんね。

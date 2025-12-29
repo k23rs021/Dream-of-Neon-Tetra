@@ -381,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 884498905}
   fadeSpeed: 0.5
-  nextSceneName: Interphone
+  nextSceneName: Explanation
 --- !u!114 &756533356
 MonoBehaviour:
   m_ObjectHideFlags: 0
