@@ -1,0 +1,5 @@
+﻿&img background1 backgroundObject
+&img eventCG1 eventObject
+いらっしゃい。
+今日はよろしくね。
+家の中案内するわ。

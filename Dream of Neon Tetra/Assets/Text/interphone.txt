@@ -1,4 +1,5 @@
 ﻿&img background1 backgroundObject
+&img eventCG1 eventObject
 ""
 ピンポーン...ピンポーン...
 いない...？
