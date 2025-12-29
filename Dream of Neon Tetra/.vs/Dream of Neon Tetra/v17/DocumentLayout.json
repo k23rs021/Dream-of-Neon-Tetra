@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|c:\\github\\dream-of-neon-tetra\\dream of neon tetra\\assets\\scripts\\scenefademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\maintextcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\maintextcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\userscriptmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\userscriptmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\scenefademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenefademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\fademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\fademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\buttonhoverimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonhoverimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\imagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\imagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\text\\interphone.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\text\\interphone.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\maintextcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\maintextcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\imagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\imagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\buttonhoverimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonhoverimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\text\\explanation.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\text\\explanation.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\gmaemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gmaemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\assets\\scripts\\userscriptmanager#c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B16D7B6-627B-2CAB-D633-2238E6D1F3CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\userscriptmanager#c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,36 +51,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SceneFadeManager.cs",
-              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\SceneFadeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneFadeManager.cs",
-              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\SceneFadeManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneFadeManager.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAIwC0AAAArAAAAAAAAAA==",
+              "Title": "MainTextController.cs",
+              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\MainTextController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainTextController.cs",
+              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\MainTextController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainTextController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T10:44:57.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FadeManager.cs",
-              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\FadeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FadeManager.cs",
-              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\FadeManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FadeManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAmwD4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T10:04:09.41Z",
+              "WhenOpened": "2025-12-29T07:12:28.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "Explanation.txt",
+              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Text\\Explanation.txt",
+              "RelativeDocumentMoniker": "Assets\\Text\\Explanation.txt",
+              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Text\\Explanation.txt",
+              "RelativeToolTip": "Assets\\Text\\Explanation.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-29T12:26:42.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SceneChanger.cs",
               "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\SceneChanger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneChanger.cs",
@@ -92,13 +87,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ButtonHoverImage.cs",
               "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\ButtonHoverImage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonHoverImage.cs",
               "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\ButtonHoverImage.cs",
               "RelativeToolTip": "Assets\\Scripts\\ButtonHoverImage.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-29T08:47:57.303Z"
             },
@@ -110,13 +105,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ImageManager.cs",
               "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\ImageManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ImageManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvwoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-29T07:36:25.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "interphone.txt",
               "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Text\\interphone.txt",
               "RelativeDocumentMoniker": "Assets\\Text\\interphone.txt",
@@ -128,31 +123,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainTextController.cs",
-              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\MainTextController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainTextController.cs",
-              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\MainTextController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainTextController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAIwCgAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "SceneFadeManager.cs",
+              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\SceneFadeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneFadeManager.cs",
+              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\SceneFadeManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneFadeManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwC0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T07:12:28.184Z"
+              "WhenOpened": "2025-12-29T10:44:57.253Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserScriptManager.cs",
+              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\UserScriptManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UserScriptManager.cs",
+              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\UserScriptManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UserScriptManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T13:13:58.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserScriptManager#C.cs",
-              "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\UserScriptManager#C.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UserScriptManager#C.cs",
-              "ToolTip": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\UserScriptManager#C.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UserScriptManager#C.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T07:06:41.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "GmaeManager.cs",
               "DocumentMoniker": "C:\\Github\\Dream-of-Neon-Tetra\\Dream of Neon Tetra\\Assets\\Scripts\\GmaeManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GmaeManager.cs",
