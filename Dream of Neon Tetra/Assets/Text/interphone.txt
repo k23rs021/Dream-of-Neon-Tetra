@@ -1,4 +1,5 @@
-
+&img background1 backgroundObject
+""
 ピンポーン...ピンポーン...
 いない...？
 はーい、今あけまーす

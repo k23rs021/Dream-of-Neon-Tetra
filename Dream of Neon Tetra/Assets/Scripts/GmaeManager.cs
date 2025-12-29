@@ -11,6 +11,7 @@ namespace NovelGame
 
         public UserScriptManager userScriptManager;
         public MainTextController mainTextController;
+        public ImageManager imageManager;
 
         // ユーザスクリプトの、今の行の数値。クリック（タップ）のたびに1ずつ増える。
         [System.NonSerialized] public int lineNumber;

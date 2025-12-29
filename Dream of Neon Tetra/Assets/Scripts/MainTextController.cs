@@ -1,7 +1,6 @@
-using UnityEngine;
-
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using TMPro;
 
 namespace NovelGame
@@ -13,6 +12,13 @@ namespace NovelGame
         // Start is called before the first frame update
         void Start()
         {
+            // 最初の行のテキストを表示、または命令を実行
+            string statement = GameManager.Instance.userScriptManager.GetCurrentSentence();
+            if (GameManager.Instance.userScriptManager.IsStatement(statement))
+            {
+                GameManager.Instance.userScriptManager.ExecuteStatement(statement);
+                GoToTheNextLine();
+            }
             DisplayText();
         }
 
@@ -31,6 +37,12 @@ namespace NovelGame
         public void GoToTheNextLine()
         {
             GameManager.Instance.lineNumber++;
+            string sentence = GameManager.Instance.userScriptManager.GetCurrentSentence();
+            if (GameManager.Instance.userScriptManager.IsStatement(sentence))
+            {
+                GameManager.Instance.userScriptManager.ExecuteStatement(sentence);
+                GoToTheNextLine();
+            }
         }
 
         // テキストを表示

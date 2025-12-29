@@ -1,7 +1,6 @@
-using UnityEngine;
-
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using System.IO;
 
 namespace NovelGame
@@ -28,6 +27,28 @@ namespace NovelGame
         public string GetCurrentSentence()
         {
             return _sentences[GameManager.Instance.lineNumber];
+        }
+
+        // ï∂Ç™ñΩóﬂÇ©Ç«Ç§Ç©
+        public bool IsStatement(string sentence)
+        {
+            if (sentence[0] == '&')
+            {
+                return true;
+            }
+            return false;
+        }
+
+        // ñΩóﬂÇé¿çsÇ∑ÇÈ
+        public void ExecuteStatement(string sentence)
+        {
+            string[] words = sentence.Split(' ');
+            switch (words[0])
+            {
+                case "&img":
+                    GameManager.Instance.imageManager.PutImage(words[1], words[2]);
+                    break;
+            }
         }
     }
 }

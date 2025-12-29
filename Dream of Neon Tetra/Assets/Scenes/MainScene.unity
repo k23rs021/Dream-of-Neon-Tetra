@@ -636,6 +636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   userScriptManager: {fileID: 1575920261}
   mainTextController: {fileID: 625692369}
+  imageManager: {fileID: 797537520}
 --- !u!4 &792603783
 Transform:
   m_ObjectHideFlags: 0
@@ -643,6 +644,53 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792603781}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &797537519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797537521}
+  - component: {fileID: 797537520}
+  m_Layer: 0
+  m_Name: ImageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &797537520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797537519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773a5a6065a92a54eb95fb06512b4e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _background1: {fileID: 8845205718278664182, guid: 85196d1bbefc2fb4dafe5e3e5c8b47d0, type: 3}
+  _backgroundObject: {fileID: 26816748}
+  _imagePrefab: {fileID: 4116081292322071142, guid: c2796523d7c85ce4281d384c999fedcf, type: 3}
+--- !u!4 &797537521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797537519}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -997,3 +1045,4 @@ SceneRoots:
   - {fileID: 576512665}
   - {fileID: 792603783}
   - {fileID: 1575920260}
+  - {fileID: 797537521}
