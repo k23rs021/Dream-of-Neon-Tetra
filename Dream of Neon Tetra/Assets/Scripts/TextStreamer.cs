@@ -3,6 +3,7 @@ using TMPro;
 using System.IO;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.SceneManagement; // シーン遷移に必要
 
 namespace NovelGame
 {
@@ -15,14 +16,17 @@ namespace NovelGame
         [Header("文字を表示する速さ")]
         [SerializeField] private float _textSpeed = 0.05f;
 
+        [Header("次に遷移するシーン名")]
+        [SerializeField] private string _nextSceneName;
+
         private TextMeshProUGUI _uiText;
         private List<string> _sentences = new List<string>();
         private int _currentLineIndex = 0;
         private int _linesInCurrentPage = 0;
 
         private bool _isTyping = false;
-        private string _baseText = "";      // すでに表示が完了している文字
-        private string _fullVisibleText = ""; // 現在のページの完成形
+        private string _baseText = "";
+        private string _fullVisibleText = "";
 
         void Awake()
         {
@@ -48,7 +52,7 @@ namespace NovelGame
                 {
                     StopAllCoroutines();
                     _uiText.text = _fullVisibleText;
-                    _baseText = _fullVisibleText; // スキップ時もベーステキストを更新
+                    _baseText = _fullVisibleText;
                     _isTyping = false;
                 }
                 else
@@ -60,9 +64,21 @@ namespace NovelGame
 
         private void DisplayNextStep()
         {
-            if (_currentLineIndex >= _sentences.Count) return;
+            // --- 修正箇所：全行表示後の処理 ---
+            if (_currentLineIndex >= _sentences.Count)
+            {
+                if (!string.IsNullOrEmpty(_nextSceneName))
+                {
+                    SceneManager.LoadScene(_nextSceneName);
+                }
+                else
+                {
+                    Debug.LogWarning("次のシーン名が設定されていません。");
+                }
+                return;
+            }
+            // --------------------------------
 
-            // 2行表示済みならクリア
             if (_linesInCurrentPage >= 2)
             {
                 _uiText.text = "";
@@ -80,7 +96,6 @@ namespace NovelGame
                 return;
             }
 
-            // タイピングすべき新しい文字列を特定する
             string newTextSegment = "";
             if (_linesInCurrentPage == 0)
             {
@@ -93,7 +108,6 @@ namespace NovelGame
                 _fullVisibleText = _baseText + newTextSegment;
             }
 
-            // 新しい部分だけをタイピングするコルーチンを開始
             StartCoroutine(TypeNewSegment(newTextSegment));
 
             _linesInCurrentPage++;
@@ -103,15 +117,11 @@ namespace NovelGame
         IEnumerator TypeNewSegment(string segment)
         {
             _isTyping = true;
-
-            // 現在表示されているテキストをベースに、1文字ずつ追加
             foreach (char c in segment)
             {
                 _uiText.text += c;
                 yield return new WaitForSeconds(_textSpeed);
             }
-
-            // 表示が終わった状態を保存
             _baseText = _uiText.text;
             _isTyping = false;
         }
