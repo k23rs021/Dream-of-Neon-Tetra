@@ -3,4 +3,4 @@
 ピンポーン...ピンポーン...
 いない...？
 はーい、今あけまーす
-あらあなた<sprite name="maincast">くんね。
+あらあなた  <sprite name="Maincast">くんね。

@@ -83,24 +83,25 @@ MonoBehaviour:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
-    m_Scale: 1
-    m_Name: "\u30B9\u30BF\u30FC\u30C8\u9078\u629E_0"
+    m_Scale: 2.5
+    m_Name: Maincast
   m_GlyphTable:
   - m_Index: 0
     m_Metrics:
-      m_Width: 297
-      m_Height: 117
-      m_HorizontalBearingX: -148.5
-      m_HorizontalBearingY: 58.5
-      m_HorizontalAdvance: 297
+      m_Width: 265.6
+      m_Height: 125.1
+      m_HorizontalBearingX: -151.17
+      m_HorizontalBearingY: 58.25
+      m_HorizontalAdvance: 100
     m_GlyphRect:
-      m_X: 254
-      m_Y: 243
-      m_Width: 297
-      m_Height: 117
+      m_X: -54
+      m_Y: 81
+      m_Width: 635
+      m_Height: 331
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
     sprite: {fileID: 936020728374080021, guid: 957b5dd8128f02047801b43b6e75dd42, type: 3}
   spriteInfoList: []
-  fallbackSpriteAssets: []
+  fallbackSpriteAssets:
+  - {fileID: 11400000}
