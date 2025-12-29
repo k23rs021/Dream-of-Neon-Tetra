@@ -2,26 +2,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ButtonHoverImage : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+// ISelectHandler と IDeselectHandler を追加
+public class ButtonHoverImage : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
 {
     [Header("右側に表示するオブジェクト")]
     public GameObject imageToDisplay;
 
-    [Header("ホバー時のボタン画像")]
+    [Header("選択・ホバー時のボタン画像")]
     public Sprite hoveredButtonSprite;
 
-    private Image buttonImage; // ボタン自身のImageコンポーネント用
-    private Sprite originalButtonSprite; // 元のボタン画像を保存用
+    private Image buttonImage;
+    private Sprite originalButtonSprite;
 
     void Start()
     {
-        // 1. 右側の画像を非表示にする
         if (imageToDisplay != null)
         {
             imageToDisplay.SetActive(false);
         }
 
-        // 2. ボタン自身のImageコンポーネントを取得し、元の画像を覚えておく
         buttonImage = GetComponent<Image>();
         if (buttonImage != null)
         {
@@ -29,35 +28,30 @@ public class ButtonHoverImage : MonoBehaviour, IPointerEnterHandler, IPointerExi
         }
     }
 
-    // マウスがボタンに入ったとき
-    public void OnPointerEnter(PointerEventData eventData)
+    // --- 表示・画像切り替えの共通処理 ---
+    private void ShowEffect()
     {
-        // 右側の画像を表示
-        if (imageToDisplay != null)
-        {
-            imageToDisplay.SetActive(true);
-        }
-
-        // ボタンの画像をホバー用に切り替え
+        if (imageToDisplay != null) imageToDisplay.SetActive(true);
         if (buttonImage != null && hoveredButtonSprite != null)
         {
             buttonImage.sprite = hoveredButtonSprite;
         }
     }
 
-    // マウスがボタンから出たとき
-    public void OnPointerExit(PointerEventData eventData)
+    private void HideEffect()
     {
-        // 右側の画像を非表示
-        if (imageToDisplay != null)
-        {
-            imageToDisplay.SetActive(false);
-        }
-
-        // ボタンの画像を元に戻す
+        if (imageToDisplay != null) imageToDisplay.SetActive(false);
         if (buttonImage != null)
         {
             buttonImage.sprite = originalButtonSprite;
         }
     }
+
+    // --- マウス操作用 ---
+    public void OnPointerEnter(PointerEventData eventData) => ShowEffect();
+    public void OnPointerExit(PointerEventData eventData) => HideEffect();
+
+    // --- 十字キー・コントローラー操作用 ---
+    public void OnSelect(BaseEventData eventData) => ShowEffect();
+    public void OnDeselect(BaseEventData eventData) => HideEffect();
 }
