@@ -624,6 +624,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367652453}
   m_CullTransparentMesh: 1
+--- !u!1 &510666897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510666898}
+  m_Layer: 5
+  m_Name: ImageParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &510666898
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510666897}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000801, y: 1.0000801, z: 1.0000801}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2074117894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000030517578}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1620,7 @@ MonoBehaviour:
   _background1: {fileID: 1613461948694667830, guid: 331f5d15b184a26448ba087b37c22d50, type: 3}
   _backgroundObject: {fileID: 26816748}
   _imagePrefab: {fileID: 4116081292322071142, guid: c2796523d7c85ce4281d384c999fedcf, type: 3}
+  _imageParent: {fileID: 0}
 --- !u!4 &797537521
 Transform:
   m_ObjectHideFlags: 0
@@ -3065,6 +3101,7 @@ RectTransform:
   m_Children:
   - {fileID: 2128296757}
   - {fileID: 1010631017}
+  - {fileID: 510666898}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3354,10 +3391,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1980626369}
   - {fileID: 2074117894}
   - {fileID: 576512665}
   - {fileID: 792603783}
   - {fileID: 1575920260}
   - {fileID: 797537521}
-  - {fileID: 1980626369}
   - {fileID: 1479716959}

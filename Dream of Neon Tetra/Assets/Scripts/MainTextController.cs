@@ -13,9 +13,21 @@ namespace NovelGame
         private bool _isTyping = false;
         private string _currentSentence = "";
 
-        void Start()
+        // void Start ではなく IEnumerator Start に書き換える
+        IEnumerator Start()
         {
+            // 1フレーム待つことで、GameManager側の参照更新(OnSceneLoaded)を確実に待つ
+            yield return null;
+
+            if (GameManager.Instance.userScriptManager == null)
+            {
+                Debug.LogError("UserScriptManagerが見つかりません");
+                yield break;
+            }
+
             _currentSentence = GameManager.Instance.userScriptManager.GetCurrentSentence();
+
+            // 最初の行が命令文（背景設定など）なら処理する
             if (GameManager.Instance.userScriptManager.IsStatement(_currentSentence))
             {
                 HandleStatement();

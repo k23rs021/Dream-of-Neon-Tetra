@@ -43,5 +43,36 @@ namespace NovelGame
 
             _textToSpriteObject.Add(imageName, item);
         }
+        // 画像を生成する親（Canvas内のオブジェクトなど）
+        [SerializeField] private Transform _imageParent;
+
+        // --- シーン遷移後に新しいシーンの親をセットするためのメソッド ---
+        public void BindParentInNewScene()
+        {
+            // 名前で検索する場合（例: シーンごとに "ImageParent" という名前の空オブジェクトがある前提）
+            GameObject parentObj = GameObject.Find("ImageParent");
+            if (parentObj != null)
+            {
+                _imageParent = parentObj.transform;
+                Debug.Log("新しいシーンの ImageParent を紐付けました。");
+            }
+            else
+            {
+                Debug.LogWarning("新しいシーンに ImageParent が見つかりません。");
+            }
+        }
+
+        // 既存の画像表示メソッド（例）
+        public void ShowImage(string imageName)
+        {
+            if (_imageParent == null)
+            {
+                // もし null ならここで探し直す
+                BindParentInNewScene();
+            }
+
+            // 画像生成処理...
+            // Instantiate(imagePrefab, _imageParent);
+        }
     }
 }
