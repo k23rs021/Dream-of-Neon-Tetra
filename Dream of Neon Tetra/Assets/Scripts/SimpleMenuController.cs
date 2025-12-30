@@ -19,8 +19,14 @@ namespace NovelGame
         // メニューの開閉を切り替える（ボタンから呼び出す用）
         public void ToggleMenu()
         {
-            if (_isOpen) CloseMenu();
-            else OpenMenu();
+            if (_isOpen)
+            {
+                CloseMenu();
+            }
+            else
+            {
+                OpenMenu();
+            }
         }
 
         public void OpenMenu()
@@ -30,8 +36,11 @@ namespace NovelGame
             _canvasGroup.interactable = true; // メニュー内のボタンを押せるようにする
             _canvasGroup.blocksRaycasts = true; // 背後のクリックを遮断する
 
-            // ゲームを一時停止したい場合は以下のコメントを外す
-            // Time.timeScale = 0;
+            // GameManagerのフラグを更新（テキスト進行を止める）
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.isMenuOpen = true;
+            }
         }
 
         public void CloseMenu()
@@ -41,8 +50,11 @@ namespace NovelGame
             _canvasGroup.interactable = false;
             _canvasGroup.blocksRaycasts = false;
 
-            // ゲームを再開する
-            // Time.timeScale = 1;
+            // GameManagerのフラグを更新（テキスト進行を再開）
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.isMenuOpen = false;
+            }
         }
     }
 }

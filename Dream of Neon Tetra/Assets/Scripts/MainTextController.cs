@@ -30,6 +30,13 @@ namespace NovelGame
         {
             if (Input.GetMouseButtonUp(0))
             {
+                // --- 修正点：UI判定ではなくフラグ判定に変更 ---
+                // メニューまたはログ画面が開いている時は、クリックを無視する
+                if (GameManager.Instance.isMenuOpen)
+                {
+                    return;
+                }
+
                 if (_isTyping)
                 {
                     StopAllCoroutines();
@@ -72,9 +79,13 @@ namespace NovelGame
             StartCoroutine(TypeText());
         }
 
-        // --- 修正したコルーチン ---
         IEnumerator TypeText()
         {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.AddLog(_currentSentence);
+            }
+
             _isTyping = true;
             _mainTextObject.text = "";
 
@@ -83,30 +94,23 @@ namespace NovelGame
             {
                 char c = _currentSentence[i];
 
-                // タグ（<）の開始を検知した場合
                 if (c == '<')
                 {
                     int tagStartIndex = i;
-                    // 閉じタグ（>）が見つかるまで一気に読み込む
                     while (i < _currentSentence.Length && _currentSentence[i] != '>')
                     {
                         i++;
                     }
-                    // '>' 自体もインデックスに含める
                     i++;
-
-                    // タグの部分を一度に流し込む（待ち時間なし）
                     _mainTextObject.text += _currentSentence.Substring(tagStartIndex, i - tagStartIndex);
                 }
                 else
                 {
-                    // 普通の文字なら1文字追加して待機
                     _mainTextObject.text += c;
                     i++;
                     yield return new WaitForSeconds(_textSpeed);
                 }
             }
-
             _isTyping = false;
         }
     }

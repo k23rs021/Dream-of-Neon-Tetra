@@ -12,6 +12,7 @@ namespace NovelGame
         public UserScriptManager userScriptManager;
         public MainTextController mainTextController;
         public ImageManager imageManager;
+        public bool isMenuOpen = false;
 
         // ユーザスクリプトの、今の行の数値。クリック（タップ）のたびに1ずつ増える。
         [System.NonSerialized] public int lineNumber;
@@ -23,5 +24,19 @@ namespace NovelGame
 
             lineNumber = 0;
         }
+
+        public List<string> logList = new List<string>(); // ログを保存するリスト
+        public const int MaxLogCount = 50; // 最大保存件数（お好みで）
+
+        public void AddLog(string sentence)
+        {
+            logList.Add(sentence);
+            // 溜まりすぎたら古いものから消す
+            if (logList.Count > MaxLogCount)
+            {
+                logList.RemoveAt(0);
+            }
+        }
     }
+
 }
