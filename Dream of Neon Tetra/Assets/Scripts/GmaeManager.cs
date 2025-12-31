@@ -100,5 +100,19 @@ namespace NovelGame
         {
             logList.Clear();
         }
+
+        [Header("Inventory")]
+        public List<string> inventoryList = new List<string>();
+
+        // アイテムを追加するメソッド
+        public void AddItem(string itemName)
+        {
+            // 重複して持たないようにチェック
+            if (!inventoryList.Contains(itemName))
+            {
+                inventoryList.Add(itemName);
+                Debug.Log("アイテムゲット: " + itemName);
+            }
+        }
     }
 }
