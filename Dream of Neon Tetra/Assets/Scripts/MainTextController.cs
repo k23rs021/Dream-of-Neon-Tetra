@@ -10,26 +10,13 @@ namespace NovelGame
         [SerializeField] TextMeshProUGUI _mainTextObject;
         [SerializeField] float _textSpeed = 0.05f;
 
-        [Header("Audio Settings")]
-        [SerializeField] private AudioClip _typeSound; // 1文字ごとの音
-        private AudioSource _audioSource;
-
         private bool _isTyping = false;
         private string _currentSentence = "";
 
-        void Awake()
-        {
-            // AudioSourceを取得、なければ追加する
-            _audioSource = GetComponent<AudioSource>();
-            if (_audioSource == null)
-            {
-                _audioSource = gameObject.AddComponent<AudioSource>();
-            }
-            _audioSource.playOnAwake = false;
-        }
-
+        // void Start ではなく IEnumerator Start に書き換える
         IEnumerator Start()
         {
+            // 1フレーム待つことで、GameManager側の参照更新(OnSceneLoaded)を確実に待つ
             yield return null;
 
             if (GameManager.Instance.userScriptManager == null)
@@ -40,6 +27,7 @@ namespace NovelGame
 
             _currentSentence = GameManager.Instance.userScriptManager.GetCurrentSentence();
 
+            // 最初の行が命令文（背景設定など）なら処理する
             if (GameManager.Instance.userScriptManager.IsStatement(_currentSentence))
             {
                 HandleStatement();
@@ -54,6 +42,8 @@ namespace NovelGame
         {
             if (Input.GetMouseButtonUp(0))
             {
+                // --- 修正点：UI判定ではなくフラグ判定に変更 ---
+                // メニューまたはログ画面が開いている時は、クリックを無視する
                 if (GameManager.Instance.isMenuOpen)
                 {
                     return;
@@ -129,13 +119,6 @@ namespace NovelGame
                 else
                 {
                     _mainTextObject.text += c;
-
-                    // --- 修正点：文字が表示されるたびに音を鳴らす ---
-                    if (_typeSound != null && _audioSource != null)
-                    {
-                        _audioSource.PlayOneShot(_typeSound);
-                    }
-
                     i++;
                     yield return new WaitForSeconds(_textSpeed);
                 }
